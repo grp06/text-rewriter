@@ -1,0 +1,24 @@
+name: RewriteText
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: "13.0"
+targets:
+  RewriteText:
+    type: application
+    platform: macOS
+    sources:
+      - RewriteText
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+      INFOPLIST_KEY_LSUIElement: YES
+  RewriteTextTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - RewriteTextTests
+    dependencies:
+      - target: RewriteText
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+

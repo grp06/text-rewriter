@@ -1,0 +1,5 @@
+.DS_Store
+.env
+RewriteText.xcodeproj/xcuserdata/
+RewriteText.xcodeproj/project.xcworkspace/xcuserdata/
+
